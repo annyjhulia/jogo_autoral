@@ -13,11 +13,11 @@ export class GameScene extends Phaser.Scene {
 
     preload() {
         //carrega as imagens que serão utilizadas
-        this.load.image("paisagem", "../assets/background.png");
-        this.load.image("plataforma", "../assets/plataforma.png");
-        this.load.image("plataforma2", "../assets/plataforma2.png");
-        this.load.image("twilight", "../assets/twilight.png");
-        this.load.image("twilight", "../assets/twilightLado.png");
+        this.load.image("paisagem", "./assets/background.png");
+        this.load.image("plataforma", "./assets/plataforma.png");
+        this.load.image("plataforma2", "./assets/plataforma2.png");
+        this.load.image("twilight", "./assets/twilight.png");
+        this.load.image("twilight", "./assets/twilightLado.png");
     }
 
     create() {

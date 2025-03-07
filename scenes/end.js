@@ -16,11 +16,11 @@ export class EndScene extends Phaser.Scene {
 
     preload() {
         //carrega as imagens que serão utilizadas
-        this.load.image("paisagem", "../assets/background.png");
-        this.load.image("perdeu", "../assets/perdeu.png");
-        this.load.image("ganhou", "../assets/ganhou.png");
-        this.load.image("menu", "../assets/botao_menu.png");
-        this.load.image("restart", "../assets/botao_restart.png");
+        this.load.image("paisagem", "./assets/background.png");
+        this.load.image("perdeu", "./assets/perdeu.png");
+        this.load.image("ganhou", "./assets/ganhou.png");
+        this.load.image("menu", "./assets/botao_menu.png");
+        this.load.image("restart", "./assets/botao_restart.png");
     }
 
     create() {

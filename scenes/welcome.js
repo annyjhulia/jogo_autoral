@@ -11,20 +11,20 @@ export class WelcomeScene extends Phaser.Scene {
 
     preload() {
         //carrega as imagens que serão utilizadas
-        this.load.image("paisagem", "../assets/background.png");
-        this.load.image("fundoInicio", "../assets/fundoInicio.png");
-        this.load.image("twi", "../assets/twi.png");
-        this.load.image("descricao", "../assets/decricao.png");
-        this.load.image("titulo", "../assets/twi_quest.png");
-        this.load.image("play", "../assets/botao_play.png");
+        this.load.image("paisagem", "./assets/background.png");
+        this.load.image("fundoInicio", "./assets/fundoInicio.png");
+        this.load.image("twi", "./assets/twi.png");
+        this.load.image("descricao", "./assets/decricao.png");
+        this.load.image("titulo", "./assets/twi_quest.png");
+        this.load.image("play", "./assets/botao_play.png");
 
         //carrega os elementos que a personagem buscará
-        this.load.image("magic", "../assets/magic.png");
-        this.load.image("laughter", "../assets/laughter.png");
-        this.load.image("kindness", "../assets/kindness.png");
-        this.load.image("loyalty", "../assets/loyalty.png");
-        this.load.image("honesty", "../assets/honesty.png");
-        this.load.image("generosity", "../assets/generosity.png");
+        this.load.image("magic", "./assets/magic.png");
+        this.load.image("laughter", "./assets/laughter.png");
+        this.load.image("kindness", "./assets/kindness.png");
+        this.load.image("loyalty", "./assets/loyalty.png");
+        this.load.image("honesty", "./assets/honesty.png");
+        this.load.image("generosity", "./assets/generosity.png");
     }
 
     create() {
