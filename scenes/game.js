@@ -14,7 +14,7 @@ export class GameScene extends Phaser.Scene {
     preload() {
         //carrega as imagens que serão utilizadas
         this.load.image("paisagem", "./assets/background.png");
-        this.load.image("plataforma", "./assets/plataforma.png");
+        this.load.image("plataforma", "./assets/hay.png");
         this.load.image("plataforma2", "./assets/plataforma2.png");
         this.load.image("twilight", "./assets/twilight.png");
         this.load.image("twilight", "./assets/twilightLado.png");
@@ -33,12 +33,12 @@ export class GameScene extends Phaser.Scene {
         this.player.setCollideWorldBounds(true);
 
         //adição de obstáculos
-        this.plataformas[0] = this.physics.add.staticImage(200, 250, 'plataforma');
-        this.plataformas[0].body.setSize(148, 44, true);
-        this.plataformas[0].setScale(0.1);
+        this.plataformas[0] = this.physics.add.staticImage(200, 450, 'plataforma');
+        this.plataformas[0].body.setSize(100, 100, true);
+        this.plataformas[0].setScale(0.15);
 
-        this.plataformas[1] = this.physics.add.staticImage(580, 300, 'plataforma2');
-        this.plataformas[1].body.setSize(148, 44, true);
+        this.plataformas[1] = this.physics.add.staticImage(580, 250, 'plataforma2');
+        this.plataformas[1].body.setSize(152, 48, true);
         this.plataformas[1].setScale(0.1);
 
         //adição de colisão entre a personagem e os obstáculos
